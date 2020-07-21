@@ -11,19 +11,11 @@ Road, Pavement, Defects, Detection, Recognition, Crack, Pothole
 
 ### Authors
 
-Bianka Tallita Passos 1
-
-Mateus Junior Cassaniga 1
-
-Anita Maria da Rocha Fernandes 1
-
-Kátya Balvedi Medeiros 1
-
-Eros Comunello 1
+Bianka Tallita Passos, Mateus Junior Cassaniga, Anita Maria da Rocha Fernandes, Kátya Balvedi Medeiros, Eros Comunello
 
 ### Affiliations
 
-1. University of Itajaí Valley – UNIVALI. Santa Catarina – Brazil.
+University of Itajaí Valley – UNIVALI. Santa Catarina – Brazil.
 
 ### Value of Data
 
