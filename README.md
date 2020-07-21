@@ -30,7 +30,12 @@ The dataset images were extracted from videos captured by NDTI, using a Highway 
 
 The camera is installed on the highest part of the vehicle, facing the front and with an inclination closer to orthogonality. Thus, the visibility of the pavement is 15 meters. This camera captures images with a minimum resolution of 4 megapixels, every 5 meters away [1].
 
-The video cameras, installed on the front and rear of the HDV, are responsible for the continuous capture of videos with a rate of 30 Frames Per Second (FPS). The resolution is at least 1280x729 and respects the 16:9 aspect ratio.
+The video cameras, installed on the front and rear of the HDV, are responsible for the continuous capture of videos with a rate of 30 Frames Per Second (FPS). The resolution is at least 1280x729 and respects the 16:9 aspect ratio. Figure 1 shows the main characteristics of the
+HDV [1].
+
+![](/figures/1.png)
+Figure 1. Representation of the HDV used by NDTI [1]: (a) satellite tracking system (b) high-resolution
+camera (c) recording cameras (d), precision odometer and (e) laser sensors.
 
 The images were provided by the NDTI on a hard disk, and with the following characteristics:
 - The images were captured between 2014 and 2017; and
@@ -42,7 +47,32 @@ The dataset was developed using only the images provided by NDTI. A total of 223
 3. Do not contain people in images; and
 4. No problems due to capture, such as defects in colors (colors that do not correspond to the rest of the image) and defects in the image (such as missing parts).
 
-Each image has 3 masks - binary images in PNG (Portable Network Graphics) format - separated for each type of annotation: road, crack and pothole. The annotation of the road consisted of demarcating the total region corresponding to the vehicle's road. The annotation of cracks and potholes consisted of the defect selection, maintaining its shape as much as possible. For the identification of cracks and potholes, the same definitions presented in NDTI [2] and Fernandes, Oda and Zerbini [3] were used.
+Figure 2 shows some images present in this database.
+
+![](/figures/2.png)
+
+Figure 2. Example of some images from the dataset.
+
+Each image has 3 masks - binary images in PNG (Portable Network Graphics) format - separated for each type of annotation: road, crack and pothole. The annotation of the road consisted of demarcating the total region corresponding to the vehicle's road, as shown in Figure
+3.
+
+![](/figures/3.png)
+
+Figure 3. Road region annotation example.
+
+The annotation of cracks and potholes consisted of the defect selection, maintaining its shape as much as possible, as shown in Figure 4. 
+
+![](/figures/4.png)
+
+Figure 4. Pothole annotation example (blue) and cracks (red).
+
+Figure 5 shows the separate masks for each type of annotation - road, pothole and crack - that compose this dataset.
+
+![](/figures/5.png)
+
+Figure 5. Example of the original image (a) and the masks corresponding to the road region (b), pothole (c) and crack (d).
+
+For the identification of cracks and potholes, the same definitions presented in NDTI [2] and Fernandes, Oda and Zerbini [3] were used.
 
 ### Experimental Design, Materials and Methods
 
