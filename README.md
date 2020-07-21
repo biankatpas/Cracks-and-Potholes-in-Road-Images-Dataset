@@ -1,37 +1,77 @@
-## Welcome to GitHub Pages
+## Cracks and Potholes in Road Images Dataset
 
-You can use the [editor on GitHub](https://github.com/biankatpas/Cracks-and-Potholes-in-Road-Images-Dataset/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### Abstract 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The poor condition of the roads directly affects traffic safety. In several countries, vehicles that survey road information are already used. These vehicles capture information and images that are used to define highway intervention and maintenance strategies. The images captured by these vehicles allow the identification of problems found on the highways, however in many cases they need manual analysis by trained technicians. Defects such as cracks and potholes can be identified automatically using image processing and machine learning techniques. Developed researches in the field of machine learning requires a large set of images, whether for training the algorithms or during the recognition test. In this context, this dataset was created containing images of defects in asphalted roads in Brazil, in order to be used for a study on the detection of cracks and potholes in asphalted roads, using texture descriptors and machine learning
+algorithms such as Support Vector Machine, K-Nearest Neighbors and Multi-Layer Perceptron Neural Network. The dataset was developed using images made available by Brazilian National Department of Transport Infrastructure (NDTI), through the Access to Information Law - Protocol 50650.003556/2017-28. The images are from highways in the states of Espírito Santo, Rio Grande do Sul and the Federal District. 2235 images were selected manually, following criteria such as not showing signs of vehicles and people, as well as not having image defects. This work consists of 2235 samples of roads where each image has 3 masks that delimit the vehicle's path and crack and pothole defects.
 
-### Markdown
+### Keywords
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Road, Pavement, Defects, Detection, Recognition, Crack, Pothole
 
-```markdown
-Syntax highlighted code block
+### Authors
 
-# Header 1
-## Header 2
-### Header 3
+Bianka Tallita Passos 1
+Mateus Junior Cassaniga 1
+Anita Maria da Rocha Fernandes 1
+Kátya Balvedi Medeiros 1
+Eros Comunello 1
 
-- Bulleted
-- List
+### Affiliations
 
-1. Numbered
-2. List
+1. University of Itajaí Valley – UNIVALI. Santa Catarina – Brazil.
 
-**Bold** and _Italic_ and `Code` text
+### Value of Data
 
-[Link](url) and ![Image](src)
-```
+- The data can be used to train classifiers or artificial neural networks to identify a lane, cracks or potholes. Different classifiers can be trained to identify the best type of image for a given problem, such as defects recognition for road maintenance.
+- The federal road network in several countries is monitored using vehicles that capture images. However, the analysis and marking of the defects found in these images is done posteriori, by technicians in laboratories. A tool capable to detect and classify defects in these images in an automated way could replace this step, speeding up the process and reducing the final cost of monitoring.
+- Vision-based methods, which use image processing to detect defects in the floor, enables a low investment cost and can be achieved with common cameras.
+- Cracks and potholes are types of defects in the pavements that can compromise the safety and quality of the roads. The identification of such defects is an important step for intervention and maintenance strategies to be carried out.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Data Description
 
-### Jekyll Themes
+The dataset images were extracted from videos captured by NDTI, using a Highway Diagnostic Vehicle (HDV). To register the highways, the HDV is equipped with a high-resolution camera and two cameras for filming.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/biankatpas/Cracks-and-Potholes-in-Road-Images-Dataset/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+The camera is installed on the highest part of the vehicle, facing the front and with an inclination closer to orthogonality. Thus, the visibility of the pavement is 15 meters. This camera captures images with a minimum resolution of 4 megapixels, every 5 meters away [1].
 
-### Support or Contact
+The video cameras, installed on the front and rear of the HDV, are responsible for the continuous capture of videos with a rate of 30 Frames Per Second (FPS). The resolution is at least 1280x729 and respects the 16:9 aspect ratio.
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+The images were provided by the NDTI on a hard disk, and with the following characteristics:
+- The images were captured between 2014 and 2017; and
+- They are images from highways of Espírito Santo state (BR 101, 259, 262, 393, 447, 482 and 484), Rio Grande do Sul state (BR 101, 290 and 386) and Federal District (BR 010, 020, 060, 070, 080 and 251).
+
+The dataset was developed using only the images provided by NDTI. A total of 2235 images were selected manually, considering the following criteria:
+1. To count as an image with damaged asphalt, present crack(s) and/or pothole(s);
+2. Do not contain vehicles in images;
+3. Do not contain people in images; and
+4. No problems due to capture, such as defects in colors (colors that do not correspond to the rest of the image) and defects in the image (such as missing parts).
+
+Each image has 3 masks - binary images in PNG (Portable Network Graphics) format - separated for each type of annotation: road, crack and pothole. The annotation of the road consisted of demarcating the total region corresponding to the vehicle's road. The annotation of cracks and potholes consisted of the defect selection, maintaining its shape as much as possible. For the identification of cracks and potholes, the same definitions presented in NDTI [2] and Fernandes, Oda and Zerbini [3] were used.
+
+### Experimental Design, Materials and Methods
+
+The images provided by NDTI have no labelling or any information referring to the damage present on the roads. A tool was developed that made it possible to annotate these objects/defects in order to create the ground-truth available in this article. The tool received as input the original image, where it is possible to select the region of the road and the defects found. As a result, the marks generated were converted into masks.
+
+### Acknowledgments
+
+This study was financed in part by the Coordenação de Aperfeiçoamento de Pessoal de Nı́vel Superior – Brasil (Higher Level Personnel Improvement Coordination - Brazil - CAPES) - Finance Code 001.
+
+### References
+
+[1] Brazil. Departamento Nacional de Infra-Estrutura de Transportes (National Department of Transport Infraestructure) . Edital Pregão Eletrônico No 0268/16-00, 2016.
+
+[2] NDTI. Norma DNIT 005/2003 - TER: Defeitos nos pavimentos flexíveis e semi-rígidos. Rio de Janeiro. 2003.
+
+[3] Fernandes Jr, J. L.; Oda, S.; Zerbini, L. F. Defeitos e atividades de manutenção e reabilitação em pavimentos asfálticos. Universidade de São Paulo: Escola de Engenharia de São Carlos. São Paulo (SP), 1999.
+
+### DOI
+
+10.17632/t576ydh9v8.3
+
+### Cite this dataset
+
+[Passos, Bianka T.; Cassaniga, Mateus J.; Fernandes, Anita M. R. ; Medeiros, Kátya B. ; Comunello, Eros (2020), “Cracks and Potholes in Road Images”, Mendeley Data, v3](http://dx.doi.org/10.17632/t576ydh9v8.3) 
+
+### Corresponding author(s)
+
+[Bianka Passos](biankatpas@gmail.com)
