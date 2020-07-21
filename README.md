@@ -12,9 +12,13 @@ Road, Pavement, Defects, Detection, Recognition, Crack, Pothole
 ### Authors
 
 Bianka Tallita Passos 1
+
 Mateus Junior Cassaniga 1
+
 Anita Maria da Rocha Fernandes 1
+
 Kátya Balvedi Medeiros 1
+
 Eros Comunello 1
 
 ### Affiliations
