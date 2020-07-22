@@ -104,6 +104,6 @@ This study was financed in part by the Coordenação de Aperfeiçoamento de Pess
 [Bianka Passos](biankatpas@gmail.com)
 
 ### Download
-[zipball](
+[Mendeley Data](
 https://data.mendeley.com/datasets/t576ydh9v8/3/files/afc7c028-06e0-475b-b190-e008df681b19/Cracks-and-Potholes-in-Road-Images.zip?dl=1
 )
