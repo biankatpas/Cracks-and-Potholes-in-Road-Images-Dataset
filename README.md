@@ -101,7 +101,7 @@ This study was financed in part by the Coordenação de Aperfeiçoamento de Pess
 
 ### Corresponding author(s)
 
-[Bianka Passos](biankatpas@gmail.com)
+[Bianka Passos](mailto:biankatpas@gmail.com)
 
 ### Download
 [Mendeley Data](
