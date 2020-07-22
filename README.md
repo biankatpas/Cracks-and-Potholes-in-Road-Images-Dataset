@@ -2,8 +2,11 @@
 
 ### Abstract 
 
-The poor condition of the roads directly affects traffic safety. In several countries, vehicles that survey road information are already used. These vehicles capture information and images that are used to define highway intervention and maintenance strategies. The images captured by these vehicles allow the identification of problems found on the highways, however in many cases they need manual analysis by trained technicians. Defects such as cracks and potholes can be identified automatically using image processing and machine learning techniques. Developed researches in the field of machine learning requires a large set of images, whether for training the algorithms or during the recognition test. In this context, this dataset was created containing images of defects in asphalted roads in Brazil, in order to be used for a study on the detection of cracks and potholes in asphalted roads, using texture descriptors and machine learning
-algorithms such as Support Vector Machine, K-Nearest Neighbors and Multi-Layer Perceptron Neural Network. The dataset was developed using images made available by Brazilian National Department of Transport Infrastructure (NDTI), through the Access to Information Law - Protocol 50650.003556/2017-28. The images are from highways in the states of Espírito Santo, Rio Grande do Sul and the Federal District. 2235 images were selected manually, following criteria such as not showing signs of vehicles and people, as well as not having image defects. This work consists of 2235 samples of roads where each image has 3 masks that delimit the vehicle's path and crack and pothole defects.
+The poor condition of the roads directly affects traffic safety. In several countries, vehicles that survey road information are already used. These vehicles capture information and images that are used to define highway intervention and maintenance strategies. The images captured by these vehicles allow the identification of problems found on the highways, however in many cases they need manual analysis by trained technicians. 
+
+Defects such as cracks and potholes can be identified automatically using image processing and machine learning techniques. Developed researches in the field of machine learning requires a large set of images, whether for training the algorithms or during the recognition test. In this context, this dataset was created containing images of defects in asphalted roads in Brazil, in order to be used for a study on the detection of cracks and potholes in asphalted roads, using texture descriptors and machine learning algorithms such as Support Vector Machine, K-Nearest Neighbors and Multi-Layer Perceptron Neural Network. 
+
+The dataset was developed using images made available by Brazilian National Department of Transport Infrastructure (NDTI), through the Access to Information Law - Protocol 50650.003556/2017-28. The images are from highways in the states of Espírito Santo, Rio Grande do Sul and the Federal District. 2235 images were selected manually, following criteria such as not showing signs of vehicles and people, as well as not having image defects. This work consists of 2235 samples of roads where each image has 3 masks that delimit the vehicle's path and crack and pothole defects.
 
 ### Keywords
 
@@ -34,8 +37,7 @@ The video cameras, installed on the front and rear of the HDV, are responsible f
 HDV [1].
 
 ![](/figures/1.png)
-Figure 1. Representation of the HDV used by NDTI [1]: (a) satellite tracking system (b) high-resolution
-camera (c) recording cameras (d), precision odometer and (e) laser sensors.
+Figure 1. Representation of the HDV used by NDTI [1]: (a) satellite tracking system (b) high-resolution camera (c) recording cameras (d), precision odometer and (e) laser sensors.
 
 The images were provided by the NDTI on a hard disk, and with the following characteristics:
 - The images were captured between 2014 and 2017; and
@@ -53,8 +55,7 @@ Figure 2 shows some images present in this database.
 
 Figure 2. Example of some images from the dataset.
 
-Each image has 3 masks - binary images in PNG (Portable Network Graphics) format - separated for each type of annotation: road, crack and pothole. The annotation of the road consisted of demarcating the total region corresponding to the vehicle's road, as shown in Figure
-3.
+Each image has 3 masks - binary images in PNG (Portable Network Graphics) format - separated for each type of annotation: road, crack and pothole. The annotation of the road consisted of demarcating the total region corresponding to the vehicle's road, as shown in Figure 3.
 
 ![](/figures/3.png)
 
