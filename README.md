@@ -97,7 +97,7 @@ This study was financed in part by the Coordenação de Aperfeiçoamento de Pess
 
 ### Cite this dataset
 
-[Passos, Bianka T.; Cassaniga, Mateus J.; Fernandes, Anita M. R. ; Medeiros, Kátya B. ; Comunello, Eros (2020), “Cracks and Potholes in Road Images”, Mendeley Data, V3, doi:10.17632/t576ydh9v8.4](http://dx.doi.org/10.17632/t576ydh9v8.4) 
+[Passos, Bianka T.; Cassaniga, Mateus J.; Fernandes, Anita M. R. ; Medeiros, Kátya B. ; Comunello, Eros (2020), “Cracks and Potholes in Road Images”, Mendeley Data, V4, doi:10.17632/t576ydh9v8.4](http://dx.doi.org/10.17632/t576ydh9v8.4) 
 
 ### Corresponding author(s)
 
